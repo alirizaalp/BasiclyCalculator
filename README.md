@@ -1,4 +1,4 @@
-markdown
+
 Copy code
 # Java Calculator
 
@@ -7,7 +7,7 @@ This is a simple command-line calculator written in Java that performs basic ari
 ## How to Use
 
 1. **Clone the Repository:**
-git clone https://github.com/your-username/java-calculator.git
+git clone  https://github.com/alirizaalp/BasiclyCalculator.git
 
 markdown
 Copy code
