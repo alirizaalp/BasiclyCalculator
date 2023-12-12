@@ -17,6 +17,9 @@ public class Calculator {
         System.out.println("3. Multiplication");
         System.out.println("4. Division");
         System.out.println("5. Decimal Remainder");
+        System.out.println("6. Square");
+        System.out.println("7. Square Root");
+        System.out.println("8. Exponentiation");
 
         int choice = scanner.nextInt();
 
@@ -37,6 +40,15 @@ public class Calculator {
                 break;
             case 5:
                 result = getDecimalRemainder(number1);
+                break;
+            case 6:
+                result = square(number1);
+                break;
+            case 7:
+                result = squareRoot(number1);
+                break;
+            case 8:
+                result = exponentiation(number1, number2);
                 break;
             default:
                 System.out.println("Invalid choice.");
@@ -69,5 +81,17 @@ public class Calculator {
 
     public static double getDecimalRemainder(double number) {
         return number % 1;
+    }
+
+    public static double square(double number) {
+        return number * number;
+    }
+
+    public static double squareRoot(double number) {
+        return Math.sqrt(number);
+    }
+
+    public static double exponentiation(double base, double exponent) {
+        return Math.pow(base, exponent);
     }
 }
